@@ -2,7 +2,7 @@
 title: "xaringan tip:"
 subtitle: "add a logo to all the slides"
 author: "Garrick Aden-Buie"
-institute: "<a href='https://www.garrickadenbuie.com/xaringan-tip-logo-all-slides'>garrickadenbuie.com/xaringan-tip-logo-all-slides</a>"
+institute: "<a href='https://www.garrickadenbuie.com/blog/xaringan-tip-logo-all-slides'>garrickadenbuie.com/blog/xaringan-tip-logo-all-slides</a>"
 date: "`r Sys.Date()`"
 output:
   xaringan::moon_reader:
