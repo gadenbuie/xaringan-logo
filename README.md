@@ -23,3 +23,7 @@ You can use this repository as a template to create your xaringan project, or fo
    and adjust the `width`, `height` and position (`top`, `bottom`, `left`, and/or `right`) as needed<sup>*</sup>.
 
 1. Use `class: hide-logo` to hide your logo on individual slides.
+
+## More Info
+
+See the companion blog post for more information: https://www.garrickadenbuie.com/blog/xaringan-tip-logo-all-slides/
