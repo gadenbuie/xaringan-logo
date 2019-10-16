@@ -14,7 +14,12 @@
 
 <script>
 document
-  .querySelectorAll('.remark-slide-content:not(.hide-logo):not(.title-slide)')
+  .querySelectorAll('.remark-slide-content' +
+                    ':not(.title-slide)' +
+                    // add additional classes to exclude here, e.g.
+                    // ':not(.inverse)' +
+                    ':not(.hide-logo)'
+                    )
   .forEach(el => {
     el.innerHTML += '<div class="logo"></div>';
   });

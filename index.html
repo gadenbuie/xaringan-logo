@@ -208,21 +208,26 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
 })(document);</script>
 <style>
 .logo {
-	background-image: url(xaringan.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	position: absolute;
-	top: 1em;
-	right: 1em;
-	width: 110px;
-	height: 128px;
-	z-index: 0;
+  background-image: url(xaringan.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  width: 110px;
+  height: 128px;
+  z-index: 0;
 }
 </style>
 
 <script>
 document
-  .querySelectorAll('.remark-slide-content:not(.hide-logo):not(.title-slide)')
+  .querySelectorAll('.remark-slide-content' +
+                    ':not(.title-slide)' +
+                    // add additional classes to exclude here, e.g.
+                    // ':not(.inverse)' +
+                    ':not(.hide-logo)'
+                    )
   .forEach(el => {
     el.innerHTML += '<div class="logo"></div>';
   });
