@@ -1,0 +1,21 @@
+<style>
+.logo {
+  background-image: url(xaringan.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  width: 110px;
+  height: 128px;
+  z-index: 0;
+}
+</style>
+
+<script>
+document
+  .querySelectorAll('.remark-slide-content:not(.hide-logo):not(.title-slide)')
+  .forEach(el => {
+    el.innerHTML += '<div class="logo"></div>';
+  });
+</script>
